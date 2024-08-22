@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar">
-      <body className={inter.className}>
+      <body style={{ fontFamily: "Shilia" }}>
         <NavBar />
         <Link href={"https://wa.me/+966546742134"} target="_blank">
           <div className="fixed bottom-20 left-10 z-50">
