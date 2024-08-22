@@ -9,8 +9,8 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "0546742134 ابو خالد /تسديد قروض",
-  description: "سداد قروض",
+  title: "ابو خالد سداد قروض",
+  description: "سداد قروض 0546742134",
 };
 
 export default function RootLayout({
