@@ -20,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar">
+      <head>
+        <link rel="icon" href="/icons/money.png" sizes="any" />
+      </head>
       <body style={{ fontFamily: "Shilia" }}>
         <NavBar />
         <Link href={"https://wa.me/+966546742134"} target="_blank">
