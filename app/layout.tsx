@@ -5,6 +5,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Fab from "@mui/material/Fab";
+import Head from "next/head";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +21,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar">
-      <head>
+      <Head>
         <link rel="icon" href="/icons/money.png" sizes="any" />
-      </head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16659023162"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16659023162');
+            `,
+          }}
+        />{" "}
+      </Head>
       <body style={{ fontFamily: "Shilia" }}>
         <NavBar />
         <Link href={"https://wa.me/+966546742134"} target="_blank">
