@@ -5,7 +5,6 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Fab from "@mui/material/Fab";
-import Head from "next/head";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar">
-      <Head>
+      <head>
         <link rel="icon" href="/icons/money.png" sizes="any" />
         <script
           async
@@ -37,7 +36,7 @@ export default function RootLayout({
             `,
           }}
         />{" "}
-      </Head>
+      </head>
       <body style={{ fontFamily: "Shilia" }}>
         <NavBar />
         <Link href={"https://wa.me/+966546742134"} target="_blank">
